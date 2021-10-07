@@ -1,0 +1,25 @@
+{
+  "name": "meme-museum-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazarH2ONyzhnyk/meme-museum-new.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NazarH2ONyzhnyk/meme-museum-new/issues"
+  },
+  "homepage": "https://github.com/NazarH2ONyzhnyk/meme-museum-new#readme",
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.16"
+  }
+}

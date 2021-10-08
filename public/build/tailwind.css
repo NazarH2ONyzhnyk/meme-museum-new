@@ -18485,6 +18485,42 @@ video {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
+.active\:bg-none:active{
+  background-image: none;
+}
+
+.active\:bg-gradient-to-t:active{
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.active\:bg-gradient-to-tr:active{
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.active\:bg-gradient-to-r:active{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.active\:bg-gradient-to-br:active{
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.active\:bg-gradient-to-b:active{
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.active\:bg-gradient-to-bl:active{
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+
+.active\:bg-gradient-to-l:active{
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+.active\:bg-gradient-to-tl:active{
+  background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
 .from-transparent{
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -50345,6 +50381,42 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .sm\:active\:bg-none:active{
+    background-image: none;
+  }
+
+  .sm\:active\:bg-gradient-to-t:active{
+    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+
+  .sm\:active\:bg-gradient-to-tr:active{
+    background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+  }
+
+  .sm\:active\:bg-gradient-to-r:active{
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+
+  .sm\:active\:bg-gradient-to-br:active{
+    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  }
+
+  .sm\:active\:bg-gradient-to-b:active{
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  }
+
+  .sm\:active\:bg-gradient-to-bl:active{
+    background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+  }
+
+  .sm\:active\:bg-gradient-to-l:active{
+    background-image: linear-gradient(to left, var(--tw-gradient-stops));
+  }
+
+  .sm\:active\:bg-gradient-to-tl:active{
+    background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
   .sm\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -82190,6 +82262,42 @@ video {
   }
 
   .md\:focus\:bg-gradient-to-tl:focus{
+    background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .md\:active\:bg-none:active{
+    background-image: none;
+  }
+
+  .md\:active\:bg-gradient-to-t:active{
+    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+
+  .md\:active\:bg-gradient-to-tr:active{
+    background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+  }
+
+  .md\:active\:bg-gradient-to-r:active{
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+
+  .md\:active\:bg-gradient-to-br:active{
+    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  }
+
+  .md\:active\:bg-gradient-to-b:active{
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  }
+
+  .md\:active\:bg-gradient-to-bl:active{
+    background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+  }
+
+  .md\:active\:bg-gradient-to-l:active{
+    background-image: linear-gradient(to left, var(--tw-gradient-stops));
+  }
+
+  .md\:active\:bg-gradient-to-tl:active{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
@@ -114041,6 +114149,42 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:active\:bg-none:active{
+    background-image: none;
+  }
+
+  .lg\:active\:bg-gradient-to-t:active{
+    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+
+  .lg\:active\:bg-gradient-to-tr:active{
+    background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+  }
+
+  .lg\:active\:bg-gradient-to-r:active{
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+
+  .lg\:active\:bg-gradient-to-br:active{
+    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  }
+
+  .lg\:active\:bg-gradient-to-b:active{
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  }
+
+  .lg\:active\:bg-gradient-to-bl:active{
+    background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+  }
+
+  .lg\:active\:bg-gradient-to-l:active{
+    background-image: linear-gradient(to left, var(--tw-gradient-stops));
+  }
+
+  .lg\:active\:bg-gradient-to-tl:active{
+    background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
   .lg\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -145889,6 +146033,42 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:active\:bg-none:active{
+    background-image: none;
+  }
+
+  .xl\:active\:bg-gradient-to-t:active{
+    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+
+  .xl\:active\:bg-gradient-to-tr:active{
+    background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+  }
+
+  .xl\:active\:bg-gradient-to-r:active{
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+
+  .xl\:active\:bg-gradient-to-br:active{
+    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  }
+
+  .xl\:active\:bg-gradient-to-b:active{
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  }
+
+  .xl\:active\:bg-gradient-to-bl:active{
+    background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+  }
+
+  .xl\:active\:bg-gradient-to-l:active{
+    background-image: linear-gradient(to left, var(--tw-gradient-stops));
+  }
+
+  .xl\:active\:bg-gradient-to-tl:active{
+    background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
   .xl\:from-transparent{
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -177734,6 +177914,42 @@ video {
   }
 
   .\32xl\:focus\:bg-gradient-to-tl:focus{
+    background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:active\:bg-none:active{
+    background-image: none;
+  }
+
+  .\32xl\:active\:bg-gradient-to-t:active{
+    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:active\:bg-gradient-to-tr:active{
+    background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:active\:bg-gradient-to-r:active{
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:active\:bg-gradient-to-br:active{
+    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:active\:bg-gradient-to-b:active{
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:active\:bg-gradient-to-bl:active{
+    background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:active\:bg-gradient-to-l:active{
+    background-image: linear-gradient(to left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:active\:bg-gradient-to-tl:active{
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 

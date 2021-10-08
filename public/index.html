@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="./build/tailwind.css">
 </head>
 <body>
-        <!-- <div class="bg-gradient-pink w-56 h-14 rounded-md p-0.5">
-            <a href="#" class="flex items-center justify-center w-full h-full bg-white rounded-md hover:bg-transparent hover:text-white">
-                <p  class="text-gradient-pink hover:text-white text-2xl font-semibold w-full h-full text-center flex items-center justify-center">text</p>
-            </a>
-        </div> -->
-
-       
 
     <!-- Header -->
-    <header class="header-bg">
+    <header class="relative header-bg">
+
+        <!-- Decorative emoji -->
+        <img src="./img/image 272.png" alt="explode" class="hidden md:block absolute top-0 right-0">
+        <img src="./img/image 1342.png" alt="trophy" class="hidden md:block absolute -bottom-12 left-0">
+        <img src="./img/image 1411.png" alt="trophy" class="hidden md:block absolute -bottom-12 right-0">
+
+        <!-- Decorative lights -->
+        <img src="./img/Ellipse 22.png" alt="lights" class="hidden md:block absolute left-0 top-16">
+        <img src="./img/Ellipse 24.png" alt="lights" class="hidden md:block absolute left-96 top-0">
+        <img src="./img/Ellipse 21.png" alt="lights" class="hidden md:block absolute right-0 top-44">
+
 
         <!-- Decorative line -->
         <div class="w-full h-4 bg-gradient-pink"></div>
@@ -32,38 +36,71 @@
                         <p class="-mt-2 font-josefin text-white text-2xl">museum</p>
                     </div>
                 </a>
-
-                <a href="#" class="flex items-center">
-                    <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white">
-                        <img src="./img/near_logo_stack 2.png" alt="">
-                    </div>
-                    <p class="ml-4 text-white text-xl font-bold">Log in with <span class="text-gradient-blue">NEAR Wallet</span></p>
-                </a>
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="flex items-center">
+                        <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white">
+                            <img src="./img/near_logo_stack 2.png" alt="">
+                        </div>
+                        
+                        <!-- If don't logined -->
+                        <!-- <p class="ml-4 text-white text-sm md:text-xl font-bold">Log in with <span class="text-gradient-blue">NEAR Wallet</span></p> -->
+                        
+                        <!-- If logined -->
+                        <div class="">
+                            <p class="text-gradient-blue text-xs md:text-base">oliinykkk.museum.testnet</p>
+                            <a href="#" class="text-white font-bold">Log out</a>
+                        </div>
+    
+                    </a>
+                </div>
             </nav>
 
             <!-- Offer -->
-            <div class="py-14">
+            <div class="pt-14 pb-52">
                 <div class="mt-14 text-center">
-                    <h1 class="text-4xl lg:text-8xl text-white font-bold">Meme Museum <span class="inline-block rounded-sm bg-gradient-blue w-5 h-5"></span></h1>
+                    <h1 class="flex justify-center items-baseline space-x-2 text-4xl lg:text-8xl text-white font-bold">
+                        <img src="./img/image 1123.png" alt="pig" class="w-9 md:w-20 h-9 md:h-20 mr-3 -pb-4">
+                        Meme Museum 
+                        <span class="inline-block rounded-sm bg-gradient-blue w-2 md:w-5 h-2 md:h-5"></span>
+                    </h1>
                     <p class="mt-4 text-white text-2xl tracking-wide">
                         Share your favorite MEME. Comment, vote and <br class="hidden lg:block"> engage with all the cool memes
                     </p>
                 </div>
-                <form action="" class="mt-14">
+                <form action="" class="mt-14 w-full">
+
+
                     <div class="flex flex-col lg:flex-row justify-center items-baseline lg:space-x-5">
-                        <input type="text" placeholder="Chack fight" class="w-full mt-2 py-3 rounded-md border-2 border-gray-900 focus:border-blue-600 outline-none pl-6">
-                        <input type="text" placeholder="Chack fighting" class="w-full mt-2 py-3 rounded-md border-2 border-gray-900 focus:border-blue-600 outline-none pl-6">
-                        <input type="text" placeholder="9gag.com/gag/ayMDG8Y" class="w-full mt-2 py-3 rounded-md border-2 border-gray-900 focus:border-blue-600 outline-none pl-6">
-                        <select name="" id="" class="w-32 mt-2 py-3 rounded-md border-2 border-gray-900 focus:border-blue-600 outline-none px-3">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                        <!-- <input type="text" placeholder="" class="w-20 mt-2 py-3 rounded-md border-2 border-gray-900 focus:border-blue-600 outline-none pl-6"> -->
-                        <a href="#" class="inline-block w-full py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-center font-semibold rounded-md">Send</a>
+                        <div class="mt-4 lg:mt-0">
+                            <p class="text-gray-400 pl-4">Meme name</p>
+                            <input type="text" placeholder="Chack fight" class="w-64 lg:w-44 xl:w-64 mt-2 py-3 rounded-md border-2 border-gray-900 focus:border-blue-600 outline-none pl-6">
+                        </div>
+                        
+                        <div class="mt-4 lg:mt-0">
+                            <p class="text-gray-400 pl-4">Title</p>
+                            <input type="text" placeholder="Chack fighting" class="w-64 lg:w-44 xl:w-64 mt-2 py-3 rounded-md border-2 border-gray-900 focus:border-blue-600 outline-none pl-6">
+                        </div>
+                        <div class="mt-4 lg:mt-0">
+                            <p class="text-gray-400 pl-4">9GAG link</p>
+                            <input type="text" placeholder="9gag.com/gag/ayMDG8Y" class="w-64 lg:w-44 xl:w-64 mt-2 py-3 rounded-md border-2 border-gray-900 focus:border-blue-600 outline-none pl-6">
+                        </div>
+                        <div class="mt-4 lg:mt-0">
+                            <p class="text-gray-400 pl-4 lg:pl-0">Category</p>
+                            <select name="" id="" class="w-16 mt-2 py-3 rounded-md border-2 border-gray-900 focus:border-blue-600 outline-none px-3">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="mt-4 lg:mt-0">
+                            <p class="hidden lg:block text-transparent">buttons</p>
+                            <a href="#" class="inline-block mt-2 w-64 lg:w-44 xl:w-64 py-3 bg-gradient-to-r from-blue-500 hover:from-white active:from-gray-200 to-blue-600 hover:to-white active:to-gray-200 text-white hover:text-blue-600 text-center font-semibold rounded-md">Send</a>
+                        </div>
                     </div>
+
+
                 </form>
             </div>
         </div>
@@ -72,7 +109,12 @@
     </header>
 
     <!-- Cards -->
-    <section>
+    <section class="relative">
+
+        <!-- Decorative img -->
+        <img src="./img/image 372.png" alt="" class="hidden md:block absolute left-0 bottom-96">
+        <img src="./img/image 278.png" alt="" class="hidden md:block absolute right-0 top-96">
+
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-24">
                 
@@ -110,35 +152,42 @@
                     </div>
 
                     <!-- Buttons -->
-                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 hover:border-blue-600 transform active:scale-95  from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md">Donate 1 NEAR</a>
+
+                    <!-- Donate -->
+                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 border-white hover:border-blue-600 transform active:scale-95 from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md duration-200">
+                        Donate 1 NEAR
+                    </a>
+
+                    <!-- Votes -->
                     <div class="flex space-x-2">
-                        <a href="#" class="flex mt-2 py-2 rounded-md w-full items-center justify-center text-lg font-bold text-gradient-blue border-2 border-blue-600 ">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-                                <path d="M0.196747 5.6491C0.196498 4.19943 0.779132 2.81055 1.81356 1.79492C2.84799 0.779304 4.24733 0.222251 5.69675 0.249096C7.41407 0.239976 9.05273 0.968271 10.1967 2.2491C11.3408 0.968271 12.9794 0.239976 14.6967 0.249096C16.1462 0.222251 17.5455 0.779304 18.5799 1.79492C19.6144 2.81055 20.197 4.19943 20.1967 5.6491C20.1967 11.0051 13.8177 15.0491 10.1967 18.2491C6.58375 15.0221 0.196747 11.0091 0.196747 5.6491Z" fill="url(#paint0_linear)"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="-2.32098" y1="-4.33101" x2="25.8899" y2="-2.74503" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#56CCF2"/>
-                                <stop offset="1" stop-color="#2F80ED"/>
-                                </linearGradient>
-                                </defs>
+
+                        <!-- Vote like -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-blue-600 text-xl font-bold w-full hover:bg-blue-600 hover:text-white rounded-md border-2 border-blue-600 transform active:scale-95 duration-200">
+                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M2.19672 9.30004C2.19647 7.85037 2.7791 6.46149 3.81353 5.44586C4.84796 4.43024 6.2473 3.87319 7.69672 3.90004C9.41404 3.89092 11.0527 4.61921 12.1967 5.90004C13.3407 4.61921 14.9794 3.89092 16.6967 3.90004C18.1461 3.87319 19.5455 4.43024 20.5799 5.44586C21.6143 6.46149 22.197 7.85037 22.1967 9.30004C22.1967 14.656 15.8177 18.7 12.1967 21.9C8.58372 18.673 2.19672 14.66 2.19672 9.30004Z" fill="currentColor"/>
                             </svg>
                             Vote
                         </a>
-                        <a href="#" class="flex mt-2 py-2  rounded-md w-full items-center justify-center text-lg font-bold text-red-500 border-2 border-red-500">
+
+                        <!-- Vote dislike -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-red-500 text-xl font-bold w-full hover:bg-red-500 hover:text-white rounded-md border-2 border-red-500 transform active:scale-95 duration-200">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                                 <g clip-path="url(#clip0)">
-                                <path d="M12.4896 21.2942C11.8446 20.7222 11.1156 20.1272 10.3446 19.4942H10.3346C7.61959 17.2742 4.54259 14.7622 3.18359 11.7522C2.7371 10.7939 2.50049 9.75134 2.48957 8.69422C2.48659 7.2437 3.06836 5.8532 4.10339 4.83698C5.13843 3.82076 6.53937 3.26461 7.98959 3.29422C9.17021 3.29608 10.3254 3.6373 11.3176 4.27722C11.7536 4.56018 12.148 4.90247 12.4896 5.29422C12.8331 4.90401 13.2276 4.56192 13.6626 4.27722C14.6543 3.63717 15.8092 3.29593 16.9896 3.29422C18.4398 3.26461 19.8407 3.82076 20.8758 4.83698C21.9108 5.8532 22.4926 7.2437 22.4896 8.69422C22.4794 9.75303 22.2428 10.7974 21.7956 11.7572C20.4366 14.7672 17.3606 17.2782 14.6456 19.4942L14.6356 19.5022C13.8636 20.1312 13.1356 20.7262 12.4906 21.3022L12.4896 21.2942ZM7.98959 5.29422C7.0581 5.28256 6.15966 5.63906 5.48959 6.28622C4.84397 6.92038 4.48314 7.78926 4.4895 8.69422C4.50091 9.46472 4.67541 10.2241 5.00159 10.9222C5.6431 12.2209 6.50869 13.3963 7.55859 14.3942C8.54959 15.3942 9.68958 16.3622 10.6756 17.1762C10.9486 17.4012 11.2266 17.6282 11.5046 17.8552L11.6796 17.9982C11.9466 18.2162 12.2226 18.4422 12.4896 18.6642L12.5026 18.6522L12.5086 18.6472H12.5146L12.5236 18.6402H12.5286H12.5336L12.5516 18.6252L12.5926 18.5922L12.5996 18.5862L12.6106 18.5782H12.6166L12.6256 18.5702L13.2896 18.0252L13.4636 17.8822C13.7446 17.6532 14.0226 17.4262 14.2956 17.2012C15.2816 16.3872 16.4226 15.4202 17.4136 14.4152C18.4636 13.4178 19.3292 12.2427 19.9706 10.9442C20.3027 10.24 20.4796 9.47272 20.4896 8.69422C20.4937 7.79205 20.1331 6.92651 19.4896 6.29422C18.8208 5.64413 17.9222 5.2847 16.9896 5.29422C15.8515 5.28454 14.7635 5.76158 13.9996 6.60522L12.4896 8.34522L10.9796 6.60522C10.2156 5.76158 9.12766 5.28454 7.98959 5.29422Z" fill="#FE3030"/>
-                                <line x1="1.46788" y1="21.7722" x2="23.6918" y2="2.81648" stroke="#FE3030" stroke-width="1.96094"/>
+                                <path d="M12.4896 21.9452C11.8446 21.3732 11.1156 20.7782 10.3446 20.1452H10.3346C7.61959 17.9252 4.54259 15.4132 3.18359 12.4032C2.7371 11.4449 2.50049 10.4023 2.48957 9.34516C2.48659 7.89464 3.06836 6.50414 4.10339 5.48792C5.13843 4.4717 6.53937 3.91555 7.98959 3.94516C9.17021 3.94702 10.3254 4.28824 11.3176 4.92816C11.7536 5.21112 12.148 5.55341 12.4896 5.94516C12.8331 5.55495 13.2276 5.21286 13.6626 4.92816C14.6543 4.28811 15.8092 3.94687 16.9896 3.94516C18.4398 3.91555 19.8407 4.4717 20.8758 5.48792C21.9108 6.50414 22.4926 7.89464 22.4896 9.34516C22.4794 10.404 22.2428 11.4483 21.7956 12.4082C20.4366 15.4182 17.3606 17.9292 14.6456 20.1452L14.6356 20.1532C13.8636 20.7822 13.1356 21.3772 12.4906 21.9532L12.4896 21.9452ZM7.98959 5.94516C7.0581 5.9335 6.15966 6.29 5.48959 6.93716C4.84397 7.57132 4.48314 8.4402 4.4895 9.34516C4.50091 10.1157 4.67541 10.875 5.00159 11.5732C5.6431 12.8719 6.50869 14.0472 7.55859 15.0452C8.54959 16.0452 9.68958 17.0132 10.6756 17.8272C10.9486 18.0522 11.2266 18.2792 11.5046 18.5062L11.6796 18.6492C11.9466 18.8672 12.2226 19.0932 12.4896 19.3152L12.5026 19.3032L12.5086 19.2982H12.5146L12.5236 19.2912H12.5286H12.5336L12.5516 19.2762L12.5926 19.2432L12.5996 19.2372L12.6106 19.2292H12.6166L12.6256 19.2212L13.2896 18.6762L13.4636 18.5332C13.7446 18.3042 14.0226 18.0772 14.2956 17.8522C15.2816 17.0382 16.4226 16.0712 17.4136 15.0662C18.4636 14.0687 19.3292 12.8937 19.9706 11.5952C20.3027 10.891 20.4796 10.1237 20.4896 9.34516C20.4937 8.44299 20.1331 7.57745 19.4896 6.94516C18.8208 6.29507 17.9222 5.93564 16.9896 5.94516C15.8515 5.93548 14.7635 6.41252 13.9996 7.25616L12.4896 8.99616L10.9796 7.25616C10.2156 6.41252 9.12766 5.93548 7.98959 5.94516Z" fill="currentColor"/>
+                                <line x1="1.46788" y1="22.4232" x2="23.6918" y2="3.46749" stroke="currentColor" stroke-width="1.96094"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0">
-                                <rect x="0.489594" y="0.294312" width="24" height="24" rx="6" fill="white"/>
+                                <rect x="0.489594" y="0.945312" width="24" height="24" rx="6" fill="currentColor"/>
                                 </clipPath>
                                 </defs>
                             </svg>
                             Vote
                         </a>
+
                     </div>
+
+                    <!-- Comments -->
                      <div class="mt-2 btn-border-pink w-full h-12 p-0.5">
                         <a href="#" class="btn-bg-pink">
                             <p class="btn-text-pink font-bold ">Comment / read comments</p>
@@ -146,7 +195,6 @@
                     </div>
 
                 </div>
-                
                 <!-- Meme card -->
                 <div class="my-16">
 
@@ -181,35 +229,42 @@
                     </div>
 
                     <!-- Buttons -->
-                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 hover:border-blue-600 transform active:scale-95  from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md">Donate 1 NEAR</a>
+
+                    <!-- Donate -->
+                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 border-white hover:border-blue-600 transform active:scale-95 from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md duration-200">
+                        Donate 1 NEAR
+                    </a>
+
+                    <!-- Votes -->
                     <div class="flex space-x-2">
-                        <a href="#" class="flex mt-2 py-2 rounded-md w-full items-center justify-center text-lg font-bold text-gradient-blue border-2 border-blue-600 ">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-                                <path d="M0.196747 5.6491C0.196498 4.19943 0.779132 2.81055 1.81356 1.79492C2.84799 0.779304 4.24733 0.222251 5.69675 0.249096C7.41407 0.239976 9.05273 0.968271 10.1967 2.2491C11.3408 0.968271 12.9794 0.239976 14.6967 0.249096C16.1462 0.222251 17.5455 0.779304 18.5799 1.79492C19.6144 2.81055 20.197 4.19943 20.1967 5.6491C20.1967 11.0051 13.8177 15.0491 10.1967 18.2491C6.58375 15.0221 0.196747 11.0091 0.196747 5.6491Z" fill="url(#paint0_linear)"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="-2.32098" y1="-4.33101" x2="25.8899" y2="-2.74503" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#56CCF2"/>
-                                <stop offset="1" stop-color="#2F80ED"/>
-                                </linearGradient>
-                                </defs>
+
+                        <!-- Vote like -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-blue-600 text-xl font-bold w-full hover:bg-blue-600 hover:text-white rounded-md border-2 border-blue-600 transform active:scale-95 duration-200">
+                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M2.19672 9.30004C2.19647 7.85037 2.7791 6.46149 3.81353 5.44586C4.84796 4.43024 6.2473 3.87319 7.69672 3.90004C9.41404 3.89092 11.0527 4.61921 12.1967 5.90004C13.3407 4.61921 14.9794 3.89092 16.6967 3.90004C18.1461 3.87319 19.5455 4.43024 20.5799 5.44586C21.6143 6.46149 22.197 7.85037 22.1967 9.30004C22.1967 14.656 15.8177 18.7 12.1967 21.9C8.58372 18.673 2.19672 14.66 2.19672 9.30004Z" fill="currentColor"/>
                             </svg>
                             Vote
                         </a>
-                        <a href="#" class="flex mt-2 py-2  rounded-md w-full items-center justify-center text-lg font-bold text-red-500 border-2 border-red-500">
+
+                        <!-- Vote dislike -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-red-500 text-xl font-bold w-full hover:bg-red-500 hover:text-white rounded-md border-2 border-red-500 transform active:scale-95 duration-200">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                                 <g clip-path="url(#clip0)">
-                                <path d="M12.4896 21.2942C11.8446 20.7222 11.1156 20.1272 10.3446 19.4942H10.3346C7.61959 17.2742 4.54259 14.7622 3.18359 11.7522C2.7371 10.7939 2.50049 9.75134 2.48957 8.69422C2.48659 7.2437 3.06836 5.8532 4.10339 4.83698C5.13843 3.82076 6.53937 3.26461 7.98959 3.29422C9.17021 3.29608 10.3254 3.6373 11.3176 4.27722C11.7536 4.56018 12.148 4.90247 12.4896 5.29422C12.8331 4.90401 13.2276 4.56192 13.6626 4.27722C14.6543 3.63717 15.8092 3.29593 16.9896 3.29422C18.4398 3.26461 19.8407 3.82076 20.8758 4.83698C21.9108 5.8532 22.4926 7.2437 22.4896 8.69422C22.4794 9.75303 22.2428 10.7974 21.7956 11.7572C20.4366 14.7672 17.3606 17.2782 14.6456 19.4942L14.6356 19.5022C13.8636 20.1312 13.1356 20.7262 12.4906 21.3022L12.4896 21.2942ZM7.98959 5.29422C7.0581 5.28256 6.15966 5.63906 5.48959 6.28622C4.84397 6.92038 4.48314 7.78926 4.4895 8.69422C4.50091 9.46472 4.67541 10.2241 5.00159 10.9222C5.6431 12.2209 6.50869 13.3963 7.55859 14.3942C8.54959 15.3942 9.68958 16.3622 10.6756 17.1762C10.9486 17.4012 11.2266 17.6282 11.5046 17.8552L11.6796 17.9982C11.9466 18.2162 12.2226 18.4422 12.4896 18.6642L12.5026 18.6522L12.5086 18.6472H12.5146L12.5236 18.6402H12.5286H12.5336L12.5516 18.6252L12.5926 18.5922L12.5996 18.5862L12.6106 18.5782H12.6166L12.6256 18.5702L13.2896 18.0252L13.4636 17.8822C13.7446 17.6532 14.0226 17.4262 14.2956 17.2012C15.2816 16.3872 16.4226 15.4202 17.4136 14.4152C18.4636 13.4178 19.3292 12.2427 19.9706 10.9442C20.3027 10.24 20.4796 9.47272 20.4896 8.69422C20.4937 7.79205 20.1331 6.92651 19.4896 6.29422C18.8208 5.64413 17.9222 5.2847 16.9896 5.29422C15.8515 5.28454 14.7635 5.76158 13.9996 6.60522L12.4896 8.34522L10.9796 6.60522C10.2156 5.76158 9.12766 5.28454 7.98959 5.29422Z" fill="#FE3030"/>
-                                <line x1="1.46788" y1="21.7722" x2="23.6918" y2="2.81648" stroke="#FE3030" stroke-width="1.96094"/>
+                                <path d="M12.4896 21.9452C11.8446 21.3732 11.1156 20.7782 10.3446 20.1452H10.3346C7.61959 17.9252 4.54259 15.4132 3.18359 12.4032C2.7371 11.4449 2.50049 10.4023 2.48957 9.34516C2.48659 7.89464 3.06836 6.50414 4.10339 5.48792C5.13843 4.4717 6.53937 3.91555 7.98959 3.94516C9.17021 3.94702 10.3254 4.28824 11.3176 4.92816C11.7536 5.21112 12.148 5.55341 12.4896 5.94516C12.8331 5.55495 13.2276 5.21286 13.6626 4.92816C14.6543 4.28811 15.8092 3.94687 16.9896 3.94516C18.4398 3.91555 19.8407 4.4717 20.8758 5.48792C21.9108 6.50414 22.4926 7.89464 22.4896 9.34516C22.4794 10.404 22.2428 11.4483 21.7956 12.4082C20.4366 15.4182 17.3606 17.9292 14.6456 20.1452L14.6356 20.1532C13.8636 20.7822 13.1356 21.3772 12.4906 21.9532L12.4896 21.9452ZM7.98959 5.94516C7.0581 5.9335 6.15966 6.29 5.48959 6.93716C4.84397 7.57132 4.48314 8.4402 4.4895 9.34516C4.50091 10.1157 4.67541 10.875 5.00159 11.5732C5.6431 12.8719 6.50869 14.0472 7.55859 15.0452C8.54959 16.0452 9.68958 17.0132 10.6756 17.8272C10.9486 18.0522 11.2266 18.2792 11.5046 18.5062L11.6796 18.6492C11.9466 18.8672 12.2226 19.0932 12.4896 19.3152L12.5026 19.3032L12.5086 19.2982H12.5146L12.5236 19.2912H12.5286H12.5336L12.5516 19.2762L12.5926 19.2432L12.5996 19.2372L12.6106 19.2292H12.6166L12.6256 19.2212L13.2896 18.6762L13.4636 18.5332C13.7446 18.3042 14.0226 18.0772 14.2956 17.8522C15.2816 17.0382 16.4226 16.0712 17.4136 15.0662C18.4636 14.0687 19.3292 12.8937 19.9706 11.5952C20.3027 10.891 20.4796 10.1237 20.4896 9.34516C20.4937 8.44299 20.1331 7.57745 19.4896 6.94516C18.8208 6.29507 17.9222 5.93564 16.9896 5.94516C15.8515 5.93548 14.7635 6.41252 13.9996 7.25616L12.4896 8.99616L10.9796 7.25616C10.2156 6.41252 9.12766 5.93548 7.98959 5.94516Z" fill="currentColor"/>
+                                <line x1="1.46788" y1="22.4232" x2="23.6918" y2="3.46749" stroke="currentColor" stroke-width="1.96094"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0">
-                                <rect x="0.489594" y="0.294312" width="24" height="24" rx="6" fill="white"/>
+                                <rect x="0.489594" y="0.945312" width="24" height="24" rx="6" fill="currentColor"/>
                                 </clipPath>
                                 </defs>
                             </svg>
                             Vote
                         </a>
+
                     </div>
+
+                    <!-- Comments -->
                      <div class="mt-2 btn-border-pink w-full h-12 p-0.5">
                         <a href="#" class="btn-bg-pink">
                             <p class="btn-text-pink font-bold ">Comment / read comments</p>
@@ -217,7 +272,6 @@
                     </div>
 
                 </div>
-                
                 <!-- Meme card -->
                 <div class="my-16">
 
@@ -252,35 +306,42 @@
                     </div>
 
                     <!-- Buttons -->
-                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 hover:border-blue-600 transform active:scale-95  from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md">Donate 1 NEAR</a>
+
+                    <!-- Donate -->
+                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 border-white hover:border-blue-600 transform active:scale-95 from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md duration-200">
+                        Donate 1 NEAR
+                    </a>
+
+                    <!-- Votes -->
                     <div class="flex space-x-2">
-                        <a href="#" class="flex mt-2 py-2 rounded-md w-full items-center justify-center text-lg font-bold text-gradient-blue border-2 border-blue-600 ">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-                                <path d="M0.196747 5.6491C0.196498 4.19943 0.779132 2.81055 1.81356 1.79492C2.84799 0.779304 4.24733 0.222251 5.69675 0.249096C7.41407 0.239976 9.05273 0.968271 10.1967 2.2491C11.3408 0.968271 12.9794 0.239976 14.6967 0.249096C16.1462 0.222251 17.5455 0.779304 18.5799 1.79492C19.6144 2.81055 20.197 4.19943 20.1967 5.6491C20.1967 11.0051 13.8177 15.0491 10.1967 18.2491C6.58375 15.0221 0.196747 11.0091 0.196747 5.6491Z" fill="url(#paint0_linear)"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="-2.32098" y1="-4.33101" x2="25.8899" y2="-2.74503" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#56CCF2"/>
-                                <stop offset="1" stop-color="#2F80ED"/>
-                                </linearGradient>
-                                </defs>
+
+                        <!-- Vote like -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-blue-600 text-xl font-bold w-full hover:bg-blue-600 hover:text-white rounded-md border-2 border-blue-600 transform active:scale-95 duration-200">
+                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M2.19672 9.30004C2.19647 7.85037 2.7791 6.46149 3.81353 5.44586C4.84796 4.43024 6.2473 3.87319 7.69672 3.90004C9.41404 3.89092 11.0527 4.61921 12.1967 5.90004C13.3407 4.61921 14.9794 3.89092 16.6967 3.90004C18.1461 3.87319 19.5455 4.43024 20.5799 5.44586C21.6143 6.46149 22.197 7.85037 22.1967 9.30004C22.1967 14.656 15.8177 18.7 12.1967 21.9C8.58372 18.673 2.19672 14.66 2.19672 9.30004Z" fill="currentColor"/>
                             </svg>
                             Vote
                         </a>
-                        <a href="#" class="flex mt-2 py-2  rounded-md w-full items-center justify-center text-lg font-bold text-red-500 border-2 border-red-500">
+
+                        <!-- Vote dislike -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-red-500 text-xl font-bold w-full hover:bg-red-500 hover:text-white rounded-md border-2 border-red-500 transform active:scale-95 duration-200">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                                 <g clip-path="url(#clip0)">
-                                <path d="M12.4896 21.2942C11.8446 20.7222 11.1156 20.1272 10.3446 19.4942H10.3346C7.61959 17.2742 4.54259 14.7622 3.18359 11.7522C2.7371 10.7939 2.50049 9.75134 2.48957 8.69422C2.48659 7.2437 3.06836 5.8532 4.10339 4.83698C5.13843 3.82076 6.53937 3.26461 7.98959 3.29422C9.17021 3.29608 10.3254 3.6373 11.3176 4.27722C11.7536 4.56018 12.148 4.90247 12.4896 5.29422C12.8331 4.90401 13.2276 4.56192 13.6626 4.27722C14.6543 3.63717 15.8092 3.29593 16.9896 3.29422C18.4398 3.26461 19.8407 3.82076 20.8758 4.83698C21.9108 5.8532 22.4926 7.2437 22.4896 8.69422C22.4794 9.75303 22.2428 10.7974 21.7956 11.7572C20.4366 14.7672 17.3606 17.2782 14.6456 19.4942L14.6356 19.5022C13.8636 20.1312 13.1356 20.7262 12.4906 21.3022L12.4896 21.2942ZM7.98959 5.29422C7.0581 5.28256 6.15966 5.63906 5.48959 6.28622C4.84397 6.92038 4.48314 7.78926 4.4895 8.69422C4.50091 9.46472 4.67541 10.2241 5.00159 10.9222C5.6431 12.2209 6.50869 13.3963 7.55859 14.3942C8.54959 15.3942 9.68958 16.3622 10.6756 17.1762C10.9486 17.4012 11.2266 17.6282 11.5046 17.8552L11.6796 17.9982C11.9466 18.2162 12.2226 18.4422 12.4896 18.6642L12.5026 18.6522L12.5086 18.6472H12.5146L12.5236 18.6402H12.5286H12.5336L12.5516 18.6252L12.5926 18.5922L12.5996 18.5862L12.6106 18.5782H12.6166L12.6256 18.5702L13.2896 18.0252L13.4636 17.8822C13.7446 17.6532 14.0226 17.4262 14.2956 17.2012C15.2816 16.3872 16.4226 15.4202 17.4136 14.4152C18.4636 13.4178 19.3292 12.2427 19.9706 10.9442C20.3027 10.24 20.4796 9.47272 20.4896 8.69422C20.4937 7.79205 20.1331 6.92651 19.4896 6.29422C18.8208 5.64413 17.9222 5.2847 16.9896 5.29422C15.8515 5.28454 14.7635 5.76158 13.9996 6.60522L12.4896 8.34522L10.9796 6.60522C10.2156 5.76158 9.12766 5.28454 7.98959 5.29422Z" fill="#FE3030"/>
-                                <line x1="1.46788" y1="21.7722" x2="23.6918" y2="2.81648" stroke="#FE3030" stroke-width="1.96094"/>
+                                <path d="M12.4896 21.9452C11.8446 21.3732 11.1156 20.7782 10.3446 20.1452H10.3346C7.61959 17.9252 4.54259 15.4132 3.18359 12.4032C2.7371 11.4449 2.50049 10.4023 2.48957 9.34516C2.48659 7.89464 3.06836 6.50414 4.10339 5.48792C5.13843 4.4717 6.53937 3.91555 7.98959 3.94516C9.17021 3.94702 10.3254 4.28824 11.3176 4.92816C11.7536 5.21112 12.148 5.55341 12.4896 5.94516C12.8331 5.55495 13.2276 5.21286 13.6626 4.92816C14.6543 4.28811 15.8092 3.94687 16.9896 3.94516C18.4398 3.91555 19.8407 4.4717 20.8758 5.48792C21.9108 6.50414 22.4926 7.89464 22.4896 9.34516C22.4794 10.404 22.2428 11.4483 21.7956 12.4082C20.4366 15.4182 17.3606 17.9292 14.6456 20.1452L14.6356 20.1532C13.8636 20.7822 13.1356 21.3772 12.4906 21.9532L12.4896 21.9452ZM7.98959 5.94516C7.0581 5.9335 6.15966 6.29 5.48959 6.93716C4.84397 7.57132 4.48314 8.4402 4.4895 9.34516C4.50091 10.1157 4.67541 10.875 5.00159 11.5732C5.6431 12.8719 6.50869 14.0472 7.55859 15.0452C8.54959 16.0452 9.68958 17.0132 10.6756 17.8272C10.9486 18.0522 11.2266 18.2792 11.5046 18.5062L11.6796 18.6492C11.9466 18.8672 12.2226 19.0932 12.4896 19.3152L12.5026 19.3032L12.5086 19.2982H12.5146L12.5236 19.2912H12.5286H12.5336L12.5516 19.2762L12.5926 19.2432L12.5996 19.2372L12.6106 19.2292H12.6166L12.6256 19.2212L13.2896 18.6762L13.4636 18.5332C13.7446 18.3042 14.0226 18.0772 14.2956 17.8522C15.2816 17.0382 16.4226 16.0712 17.4136 15.0662C18.4636 14.0687 19.3292 12.8937 19.9706 11.5952C20.3027 10.891 20.4796 10.1237 20.4896 9.34516C20.4937 8.44299 20.1331 7.57745 19.4896 6.94516C18.8208 6.29507 17.9222 5.93564 16.9896 5.94516C15.8515 5.93548 14.7635 6.41252 13.9996 7.25616L12.4896 8.99616L10.9796 7.25616C10.2156 6.41252 9.12766 5.93548 7.98959 5.94516Z" fill="currentColor"/>
+                                <line x1="1.46788" y1="22.4232" x2="23.6918" y2="3.46749" stroke="currentColor" stroke-width="1.96094"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0">
-                                <rect x="0.489594" y="0.294312" width="24" height="24" rx="6" fill="white"/>
+                                <rect x="0.489594" y="0.945312" width="24" height="24" rx="6" fill="currentColor"/>
                                 </clipPath>
                                 </defs>
                             </svg>
                             Vote
                         </a>
+
                     </div>
+
+                    <!-- Comments -->
                      <div class="mt-2 btn-border-pink w-full h-12 p-0.5">
                         <a href="#" class="btn-bg-pink">
                             <p class="btn-text-pink font-bold ">Comment / read comments</p>
@@ -288,7 +349,6 @@
                     </div>
 
                 </div>
-                
                 <!-- Meme card -->
                 <div class="my-16">
 
@@ -323,35 +383,42 @@
                     </div>
 
                     <!-- Buttons -->
-                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 hover:border-blue-600 transform active:scale-95  from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md">Donate 1 NEAR</a>
+
+                    <!-- Donate -->
+                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 border-white hover:border-blue-600 transform active:scale-95 from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md duration-200">
+                        Donate 1 NEAR
+                    </a>
+
+                    <!-- Votes -->
                     <div class="flex space-x-2">
-                        <a href="#" class="flex mt-2 py-2 rounded-md w-full items-center justify-center text-lg font-bold text-gradient-blue border-2 border-blue-600 ">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-                                <path d="M0.196747 5.6491C0.196498 4.19943 0.779132 2.81055 1.81356 1.79492C2.84799 0.779304 4.24733 0.222251 5.69675 0.249096C7.41407 0.239976 9.05273 0.968271 10.1967 2.2491C11.3408 0.968271 12.9794 0.239976 14.6967 0.249096C16.1462 0.222251 17.5455 0.779304 18.5799 1.79492C19.6144 2.81055 20.197 4.19943 20.1967 5.6491C20.1967 11.0051 13.8177 15.0491 10.1967 18.2491C6.58375 15.0221 0.196747 11.0091 0.196747 5.6491Z" fill="url(#paint0_linear)"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="-2.32098" y1="-4.33101" x2="25.8899" y2="-2.74503" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#56CCF2"/>
-                                <stop offset="1" stop-color="#2F80ED"/>
-                                </linearGradient>
-                                </defs>
+
+                        <!-- Vote like -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-blue-600 text-xl font-bold w-full hover:bg-blue-600 hover:text-white rounded-md border-2 border-blue-600 transform active:scale-95 duration-200">
+                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M2.19672 9.30004C2.19647 7.85037 2.7791 6.46149 3.81353 5.44586C4.84796 4.43024 6.2473 3.87319 7.69672 3.90004C9.41404 3.89092 11.0527 4.61921 12.1967 5.90004C13.3407 4.61921 14.9794 3.89092 16.6967 3.90004C18.1461 3.87319 19.5455 4.43024 20.5799 5.44586C21.6143 6.46149 22.197 7.85037 22.1967 9.30004C22.1967 14.656 15.8177 18.7 12.1967 21.9C8.58372 18.673 2.19672 14.66 2.19672 9.30004Z" fill="currentColor"/>
                             </svg>
                             Vote
                         </a>
-                        <a href="#" class="flex mt-2 py-2  rounded-md w-full items-center justify-center text-lg font-bold text-red-500 border-2 border-red-500">
+
+                        <!-- Vote dislike -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-red-500 text-xl font-bold w-full hover:bg-red-500 hover:text-white rounded-md border-2 border-red-500 transform active:scale-95 duration-200">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                                 <g clip-path="url(#clip0)">
-                                <path d="M12.4896 21.2942C11.8446 20.7222 11.1156 20.1272 10.3446 19.4942H10.3346C7.61959 17.2742 4.54259 14.7622 3.18359 11.7522C2.7371 10.7939 2.50049 9.75134 2.48957 8.69422C2.48659 7.2437 3.06836 5.8532 4.10339 4.83698C5.13843 3.82076 6.53937 3.26461 7.98959 3.29422C9.17021 3.29608 10.3254 3.6373 11.3176 4.27722C11.7536 4.56018 12.148 4.90247 12.4896 5.29422C12.8331 4.90401 13.2276 4.56192 13.6626 4.27722C14.6543 3.63717 15.8092 3.29593 16.9896 3.29422C18.4398 3.26461 19.8407 3.82076 20.8758 4.83698C21.9108 5.8532 22.4926 7.2437 22.4896 8.69422C22.4794 9.75303 22.2428 10.7974 21.7956 11.7572C20.4366 14.7672 17.3606 17.2782 14.6456 19.4942L14.6356 19.5022C13.8636 20.1312 13.1356 20.7262 12.4906 21.3022L12.4896 21.2942ZM7.98959 5.29422C7.0581 5.28256 6.15966 5.63906 5.48959 6.28622C4.84397 6.92038 4.48314 7.78926 4.4895 8.69422C4.50091 9.46472 4.67541 10.2241 5.00159 10.9222C5.6431 12.2209 6.50869 13.3963 7.55859 14.3942C8.54959 15.3942 9.68958 16.3622 10.6756 17.1762C10.9486 17.4012 11.2266 17.6282 11.5046 17.8552L11.6796 17.9982C11.9466 18.2162 12.2226 18.4422 12.4896 18.6642L12.5026 18.6522L12.5086 18.6472H12.5146L12.5236 18.6402H12.5286H12.5336L12.5516 18.6252L12.5926 18.5922L12.5996 18.5862L12.6106 18.5782H12.6166L12.6256 18.5702L13.2896 18.0252L13.4636 17.8822C13.7446 17.6532 14.0226 17.4262 14.2956 17.2012C15.2816 16.3872 16.4226 15.4202 17.4136 14.4152C18.4636 13.4178 19.3292 12.2427 19.9706 10.9442C20.3027 10.24 20.4796 9.47272 20.4896 8.69422C20.4937 7.79205 20.1331 6.92651 19.4896 6.29422C18.8208 5.64413 17.9222 5.2847 16.9896 5.29422C15.8515 5.28454 14.7635 5.76158 13.9996 6.60522L12.4896 8.34522L10.9796 6.60522C10.2156 5.76158 9.12766 5.28454 7.98959 5.29422Z" fill="#FE3030"/>
-                                <line x1="1.46788" y1="21.7722" x2="23.6918" y2="2.81648" stroke="#FE3030" stroke-width="1.96094"/>
+                                <path d="M12.4896 21.9452C11.8446 21.3732 11.1156 20.7782 10.3446 20.1452H10.3346C7.61959 17.9252 4.54259 15.4132 3.18359 12.4032C2.7371 11.4449 2.50049 10.4023 2.48957 9.34516C2.48659 7.89464 3.06836 6.50414 4.10339 5.48792C5.13843 4.4717 6.53937 3.91555 7.98959 3.94516C9.17021 3.94702 10.3254 4.28824 11.3176 4.92816C11.7536 5.21112 12.148 5.55341 12.4896 5.94516C12.8331 5.55495 13.2276 5.21286 13.6626 4.92816C14.6543 4.28811 15.8092 3.94687 16.9896 3.94516C18.4398 3.91555 19.8407 4.4717 20.8758 5.48792C21.9108 6.50414 22.4926 7.89464 22.4896 9.34516C22.4794 10.404 22.2428 11.4483 21.7956 12.4082C20.4366 15.4182 17.3606 17.9292 14.6456 20.1452L14.6356 20.1532C13.8636 20.7822 13.1356 21.3772 12.4906 21.9532L12.4896 21.9452ZM7.98959 5.94516C7.0581 5.9335 6.15966 6.29 5.48959 6.93716C4.84397 7.57132 4.48314 8.4402 4.4895 9.34516C4.50091 10.1157 4.67541 10.875 5.00159 11.5732C5.6431 12.8719 6.50869 14.0472 7.55859 15.0452C8.54959 16.0452 9.68958 17.0132 10.6756 17.8272C10.9486 18.0522 11.2266 18.2792 11.5046 18.5062L11.6796 18.6492C11.9466 18.8672 12.2226 19.0932 12.4896 19.3152L12.5026 19.3032L12.5086 19.2982H12.5146L12.5236 19.2912H12.5286H12.5336L12.5516 19.2762L12.5926 19.2432L12.5996 19.2372L12.6106 19.2292H12.6166L12.6256 19.2212L13.2896 18.6762L13.4636 18.5332C13.7446 18.3042 14.0226 18.0772 14.2956 17.8522C15.2816 17.0382 16.4226 16.0712 17.4136 15.0662C18.4636 14.0687 19.3292 12.8937 19.9706 11.5952C20.3027 10.891 20.4796 10.1237 20.4896 9.34516C20.4937 8.44299 20.1331 7.57745 19.4896 6.94516C18.8208 6.29507 17.9222 5.93564 16.9896 5.94516C15.8515 5.93548 14.7635 6.41252 13.9996 7.25616L12.4896 8.99616L10.9796 7.25616C10.2156 6.41252 9.12766 5.93548 7.98959 5.94516Z" fill="currentColor"/>
+                                <line x1="1.46788" y1="22.4232" x2="23.6918" y2="3.46749" stroke="currentColor" stroke-width="1.96094"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0">
-                                <rect x="0.489594" y="0.294312" width="24" height="24" rx="6" fill="white"/>
+                                <rect x="0.489594" y="0.945312" width="24" height="24" rx="6" fill="currentColor"/>
                                 </clipPath>
                                 </defs>
                             </svg>
                             Vote
                         </a>
+
                     </div>
+
+                    <!-- Comments -->
                      <div class="mt-2 btn-border-pink w-full h-12 p-0.5">
                         <a href="#" class="btn-bg-pink">
                             <p class="btn-text-pink font-bold ">Comment / read comments</p>
@@ -359,7 +426,6 @@
                     </div>
 
                 </div>
-                
                 <!-- Meme card -->
                 <div class="my-16">
 
@@ -394,35 +460,42 @@
                     </div>
 
                     <!-- Buttons -->
-                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 hover:border-blue-600 transform active:scale-95  from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md">Donate 1 NEAR</a>
+
+                    <!-- Donate -->
+                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 border-white hover:border-blue-600 transform active:scale-95 from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md duration-200">
+                        Donate 1 NEAR
+                    </a>
+
+                    <!-- Votes -->
                     <div class="flex space-x-2">
-                        <a href="#" class="flex mt-2 py-2 rounded-md w-full items-center justify-center text-lg font-bold text-gradient-blue border-2 border-blue-600 ">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-                                <path d="M0.196747 5.6491C0.196498 4.19943 0.779132 2.81055 1.81356 1.79492C2.84799 0.779304 4.24733 0.222251 5.69675 0.249096C7.41407 0.239976 9.05273 0.968271 10.1967 2.2491C11.3408 0.968271 12.9794 0.239976 14.6967 0.249096C16.1462 0.222251 17.5455 0.779304 18.5799 1.79492C19.6144 2.81055 20.197 4.19943 20.1967 5.6491C20.1967 11.0051 13.8177 15.0491 10.1967 18.2491C6.58375 15.0221 0.196747 11.0091 0.196747 5.6491Z" fill="url(#paint0_linear)"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="-2.32098" y1="-4.33101" x2="25.8899" y2="-2.74503" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#56CCF2"/>
-                                <stop offset="1" stop-color="#2F80ED"/>
-                                </linearGradient>
-                                </defs>
+
+                        <!-- Vote like -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-blue-600 text-xl font-bold w-full hover:bg-blue-600 hover:text-white rounded-md border-2 border-blue-600 transform active:scale-95 duration-200">
+                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M2.19672 9.30004C2.19647 7.85037 2.7791 6.46149 3.81353 5.44586C4.84796 4.43024 6.2473 3.87319 7.69672 3.90004C9.41404 3.89092 11.0527 4.61921 12.1967 5.90004C13.3407 4.61921 14.9794 3.89092 16.6967 3.90004C18.1461 3.87319 19.5455 4.43024 20.5799 5.44586C21.6143 6.46149 22.197 7.85037 22.1967 9.30004C22.1967 14.656 15.8177 18.7 12.1967 21.9C8.58372 18.673 2.19672 14.66 2.19672 9.30004Z" fill="currentColor"/>
                             </svg>
                             Vote
                         </a>
-                        <a href="#" class="flex mt-2 py-2  rounded-md w-full items-center justify-center text-lg font-bold text-red-500 border-2 border-red-500">
+
+                        <!-- Vote dislike -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-red-500 text-xl font-bold w-full hover:bg-red-500 hover:text-white rounded-md border-2 border-red-500 transform active:scale-95 duration-200">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                                 <g clip-path="url(#clip0)">
-                                <path d="M12.4896 21.2942C11.8446 20.7222 11.1156 20.1272 10.3446 19.4942H10.3346C7.61959 17.2742 4.54259 14.7622 3.18359 11.7522C2.7371 10.7939 2.50049 9.75134 2.48957 8.69422C2.48659 7.2437 3.06836 5.8532 4.10339 4.83698C5.13843 3.82076 6.53937 3.26461 7.98959 3.29422C9.17021 3.29608 10.3254 3.6373 11.3176 4.27722C11.7536 4.56018 12.148 4.90247 12.4896 5.29422C12.8331 4.90401 13.2276 4.56192 13.6626 4.27722C14.6543 3.63717 15.8092 3.29593 16.9896 3.29422C18.4398 3.26461 19.8407 3.82076 20.8758 4.83698C21.9108 5.8532 22.4926 7.2437 22.4896 8.69422C22.4794 9.75303 22.2428 10.7974 21.7956 11.7572C20.4366 14.7672 17.3606 17.2782 14.6456 19.4942L14.6356 19.5022C13.8636 20.1312 13.1356 20.7262 12.4906 21.3022L12.4896 21.2942ZM7.98959 5.29422C7.0581 5.28256 6.15966 5.63906 5.48959 6.28622C4.84397 6.92038 4.48314 7.78926 4.4895 8.69422C4.50091 9.46472 4.67541 10.2241 5.00159 10.9222C5.6431 12.2209 6.50869 13.3963 7.55859 14.3942C8.54959 15.3942 9.68958 16.3622 10.6756 17.1762C10.9486 17.4012 11.2266 17.6282 11.5046 17.8552L11.6796 17.9982C11.9466 18.2162 12.2226 18.4422 12.4896 18.6642L12.5026 18.6522L12.5086 18.6472H12.5146L12.5236 18.6402H12.5286H12.5336L12.5516 18.6252L12.5926 18.5922L12.5996 18.5862L12.6106 18.5782H12.6166L12.6256 18.5702L13.2896 18.0252L13.4636 17.8822C13.7446 17.6532 14.0226 17.4262 14.2956 17.2012C15.2816 16.3872 16.4226 15.4202 17.4136 14.4152C18.4636 13.4178 19.3292 12.2427 19.9706 10.9442C20.3027 10.24 20.4796 9.47272 20.4896 8.69422C20.4937 7.79205 20.1331 6.92651 19.4896 6.29422C18.8208 5.64413 17.9222 5.2847 16.9896 5.29422C15.8515 5.28454 14.7635 5.76158 13.9996 6.60522L12.4896 8.34522L10.9796 6.60522C10.2156 5.76158 9.12766 5.28454 7.98959 5.29422Z" fill="#FE3030"/>
-                                <line x1="1.46788" y1="21.7722" x2="23.6918" y2="2.81648" stroke="#FE3030" stroke-width="1.96094"/>
+                                <path d="M12.4896 21.9452C11.8446 21.3732 11.1156 20.7782 10.3446 20.1452H10.3346C7.61959 17.9252 4.54259 15.4132 3.18359 12.4032C2.7371 11.4449 2.50049 10.4023 2.48957 9.34516C2.48659 7.89464 3.06836 6.50414 4.10339 5.48792C5.13843 4.4717 6.53937 3.91555 7.98959 3.94516C9.17021 3.94702 10.3254 4.28824 11.3176 4.92816C11.7536 5.21112 12.148 5.55341 12.4896 5.94516C12.8331 5.55495 13.2276 5.21286 13.6626 4.92816C14.6543 4.28811 15.8092 3.94687 16.9896 3.94516C18.4398 3.91555 19.8407 4.4717 20.8758 5.48792C21.9108 6.50414 22.4926 7.89464 22.4896 9.34516C22.4794 10.404 22.2428 11.4483 21.7956 12.4082C20.4366 15.4182 17.3606 17.9292 14.6456 20.1452L14.6356 20.1532C13.8636 20.7822 13.1356 21.3772 12.4906 21.9532L12.4896 21.9452ZM7.98959 5.94516C7.0581 5.9335 6.15966 6.29 5.48959 6.93716C4.84397 7.57132 4.48314 8.4402 4.4895 9.34516C4.50091 10.1157 4.67541 10.875 5.00159 11.5732C5.6431 12.8719 6.50869 14.0472 7.55859 15.0452C8.54959 16.0452 9.68958 17.0132 10.6756 17.8272C10.9486 18.0522 11.2266 18.2792 11.5046 18.5062L11.6796 18.6492C11.9466 18.8672 12.2226 19.0932 12.4896 19.3152L12.5026 19.3032L12.5086 19.2982H12.5146L12.5236 19.2912H12.5286H12.5336L12.5516 19.2762L12.5926 19.2432L12.5996 19.2372L12.6106 19.2292H12.6166L12.6256 19.2212L13.2896 18.6762L13.4636 18.5332C13.7446 18.3042 14.0226 18.0772 14.2956 17.8522C15.2816 17.0382 16.4226 16.0712 17.4136 15.0662C18.4636 14.0687 19.3292 12.8937 19.9706 11.5952C20.3027 10.891 20.4796 10.1237 20.4896 9.34516C20.4937 8.44299 20.1331 7.57745 19.4896 6.94516C18.8208 6.29507 17.9222 5.93564 16.9896 5.94516C15.8515 5.93548 14.7635 6.41252 13.9996 7.25616L12.4896 8.99616L10.9796 7.25616C10.2156 6.41252 9.12766 5.93548 7.98959 5.94516Z" fill="currentColor"/>
+                                <line x1="1.46788" y1="22.4232" x2="23.6918" y2="3.46749" stroke="currentColor" stroke-width="1.96094"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0">
-                                <rect x="0.489594" y="0.294312" width="24" height="24" rx="6" fill="white"/>
+                                <rect x="0.489594" y="0.945312" width="24" height="24" rx="6" fill="currentColor"/>
                                 </clipPath>
                                 </defs>
                             </svg>
                             Vote
                         </a>
+
                     </div>
+
+                    <!-- Comments -->
                      <div class="mt-2 btn-border-pink w-full h-12 p-0.5">
                         <a href="#" class="btn-bg-pink">
                             <p class="btn-text-pink font-bold ">Comment / read comments</p>
@@ -430,7 +503,6 @@
                     </div>
 
                 </div>
-                
                 <!-- Meme card -->
                 <div class="my-16">
 
@@ -465,35 +537,42 @@
                     </div>
 
                     <!-- Buttons -->
-                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 hover:border-blue-600 transform active:scale-95  from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md">Donate 1 NEAR</a>
+
+                    <!-- Donate -->
+                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 border-white hover:border-blue-600 transform active:scale-95 from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md duration-200">
+                        Donate 1 NEAR
+                    </a>
+
+                    <!-- Votes -->
                     <div class="flex space-x-2">
-                        <a href="#" class="flex mt-2 py-2 rounded-md w-full items-center justify-center text-lg font-bold text-gradient-blue border-2 border-blue-600 ">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-                                <path d="M0.196747 5.6491C0.196498 4.19943 0.779132 2.81055 1.81356 1.79492C2.84799 0.779304 4.24733 0.222251 5.69675 0.249096C7.41407 0.239976 9.05273 0.968271 10.1967 2.2491C11.3408 0.968271 12.9794 0.239976 14.6967 0.249096C16.1462 0.222251 17.5455 0.779304 18.5799 1.79492C19.6144 2.81055 20.197 4.19943 20.1967 5.6491C20.1967 11.0051 13.8177 15.0491 10.1967 18.2491C6.58375 15.0221 0.196747 11.0091 0.196747 5.6491Z" fill="url(#paint0_linear)"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="-2.32098" y1="-4.33101" x2="25.8899" y2="-2.74503" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#56CCF2"/>
-                                <stop offset="1" stop-color="#2F80ED"/>
-                                </linearGradient>
-                                </defs>
+
+                        <!-- Vote like -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-blue-600 text-xl font-bold w-full hover:bg-blue-600 hover:text-white rounded-md border-2 border-blue-600 transform active:scale-95 duration-200">
+                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M2.19672 9.30004C2.19647 7.85037 2.7791 6.46149 3.81353 5.44586C4.84796 4.43024 6.2473 3.87319 7.69672 3.90004C9.41404 3.89092 11.0527 4.61921 12.1967 5.90004C13.3407 4.61921 14.9794 3.89092 16.6967 3.90004C18.1461 3.87319 19.5455 4.43024 20.5799 5.44586C21.6143 6.46149 22.197 7.85037 22.1967 9.30004C22.1967 14.656 15.8177 18.7 12.1967 21.9C8.58372 18.673 2.19672 14.66 2.19672 9.30004Z" fill="currentColor"/>
                             </svg>
                             Vote
                         </a>
-                        <a href="#" class="flex mt-2 py-2  rounded-md w-full items-center justify-center text-lg font-bold text-red-500 border-2 border-red-500">
+
+                        <!-- Vote dislike -->
+                        <a href="#" class="flex items-center justify-center mt-2 py-2 text-red-500 text-xl font-bold w-full hover:bg-red-500 hover:text-white rounded-md border-2 border-red-500 transform active:scale-95 duration-200">
                             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                                 <g clip-path="url(#clip0)">
-                                <path d="M12.4896 21.2942C11.8446 20.7222 11.1156 20.1272 10.3446 19.4942H10.3346C7.61959 17.2742 4.54259 14.7622 3.18359 11.7522C2.7371 10.7939 2.50049 9.75134 2.48957 8.69422C2.48659 7.2437 3.06836 5.8532 4.10339 4.83698C5.13843 3.82076 6.53937 3.26461 7.98959 3.29422C9.17021 3.29608 10.3254 3.6373 11.3176 4.27722C11.7536 4.56018 12.148 4.90247 12.4896 5.29422C12.8331 4.90401 13.2276 4.56192 13.6626 4.27722C14.6543 3.63717 15.8092 3.29593 16.9896 3.29422C18.4398 3.26461 19.8407 3.82076 20.8758 4.83698C21.9108 5.8532 22.4926 7.2437 22.4896 8.69422C22.4794 9.75303 22.2428 10.7974 21.7956 11.7572C20.4366 14.7672 17.3606 17.2782 14.6456 19.4942L14.6356 19.5022C13.8636 20.1312 13.1356 20.7262 12.4906 21.3022L12.4896 21.2942ZM7.98959 5.29422C7.0581 5.28256 6.15966 5.63906 5.48959 6.28622C4.84397 6.92038 4.48314 7.78926 4.4895 8.69422C4.50091 9.46472 4.67541 10.2241 5.00159 10.9222C5.6431 12.2209 6.50869 13.3963 7.55859 14.3942C8.54959 15.3942 9.68958 16.3622 10.6756 17.1762C10.9486 17.4012 11.2266 17.6282 11.5046 17.8552L11.6796 17.9982C11.9466 18.2162 12.2226 18.4422 12.4896 18.6642L12.5026 18.6522L12.5086 18.6472H12.5146L12.5236 18.6402H12.5286H12.5336L12.5516 18.6252L12.5926 18.5922L12.5996 18.5862L12.6106 18.5782H12.6166L12.6256 18.5702L13.2896 18.0252L13.4636 17.8822C13.7446 17.6532 14.0226 17.4262 14.2956 17.2012C15.2816 16.3872 16.4226 15.4202 17.4136 14.4152C18.4636 13.4178 19.3292 12.2427 19.9706 10.9442C20.3027 10.24 20.4796 9.47272 20.4896 8.69422C20.4937 7.79205 20.1331 6.92651 19.4896 6.29422C18.8208 5.64413 17.9222 5.2847 16.9896 5.29422C15.8515 5.28454 14.7635 5.76158 13.9996 6.60522L12.4896 8.34522L10.9796 6.60522C10.2156 5.76158 9.12766 5.28454 7.98959 5.29422Z" fill="#FE3030"/>
-                                <line x1="1.46788" y1="21.7722" x2="23.6918" y2="2.81648" stroke="#FE3030" stroke-width="1.96094"/>
+                                <path d="M12.4896 21.9452C11.8446 21.3732 11.1156 20.7782 10.3446 20.1452H10.3346C7.61959 17.9252 4.54259 15.4132 3.18359 12.4032C2.7371 11.4449 2.50049 10.4023 2.48957 9.34516C2.48659 7.89464 3.06836 6.50414 4.10339 5.48792C5.13843 4.4717 6.53937 3.91555 7.98959 3.94516C9.17021 3.94702 10.3254 4.28824 11.3176 4.92816C11.7536 5.21112 12.148 5.55341 12.4896 5.94516C12.8331 5.55495 13.2276 5.21286 13.6626 4.92816C14.6543 4.28811 15.8092 3.94687 16.9896 3.94516C18.4398 3.91555 19.8407 4.4717 20.8758 5.48792C21.9108 6.50414 22.4926 7.89464 22.4896 9.34516C22.4794 10.404 22.2428 11.4483 21.7956 12.4082C20.4366 15.4182 17.3606 17.9292 14.6456 20.1452L14.6356 20.1532C13.8636 20.7822 13.1356 21.3772 12.4906 21.9532L12.4896 21.9452ZM7.98959 5.94516C7.0581 5.9335 6.15966 6.29 5.48959 6.93716C4.84397 7.57132 4.48314 8.4402 4.4895 9.34516C4.50091 10.1157 4.67541 10.875 5.00159 11.5732C5.6431 12.8719 6.50869 14.0472 7.55859 15.0452C8.54959 16.0452 9.68958 17.0132 10.6756 17.8272C10.9486 18.0522 11.2266 18.2792 11.5046 18.5062L11.6796 18.6492C11.9466 18.8672 12.2226 19.0932 12.4896 19.3152L12.5026 19.3032L12.5086 19.2982H12.5146L12.5236 19.2912H12.5286H12.5336L12.5516 19.2762L12.5926 19.2432L12.5996 19.2372L12.6106 19.2292H12.6166L12.6256 19.2212L13.2896 18.6762L13.4636 18.5332C13.7446 18.3042 14.0226 18.0772 14.2956 17.8522C15.2816 17.0382 16.4226 16.0712 17.4136 15.0662C18.4636 14.0687 19.3292 12.8937 19.9706 11.5952C20.3027 10.891 20.4796 10.1237 20.4896 9.34516C20.4937 8.44299 20.1331 7.57745 19.4896 6.94516C18.8208 6.29507 17.9222 5.93564 16.9896 5.94516C15.8515 5.93548 14.7635 6.41252 13.9996 7.25616L12.4896 8.99616L10.9796 7.25616C10.2156 6.41252 9.12766 5.93548 7.98959 5.94516Z" fill="currentColor"/>
+                                <line x1="1.46788" y1="22.4232" x2="23.6918" y2="3.46749" stroke="currentColor" stroke-width="1.96094"/>
                                 </g>
                                 <defs>
                                 <clipPath id="clip0">
-                                <rect x="0.489594" y="0.294312" width="24" height="24" rx="6" fill="white"/>
+                                <rect x="0.489594" y="0.945312" width="24" height="24" rx="6" fill="currentColor"/>
                                 </clipPath>
                                 </defs>
                             </svg>
                             Vote
                         </a>
+
                     </div>
+
+                    <!-- Comments -->
                      <div class="mt-2 btn-border-pink w-full h-12 p-0.5">
                         <a href="#" class="btn-bg-pink">
                             <p class="btn-text-pink font-bold ">Comment / read comments</p>
@@ -502,367 +581,19 @@
 
                 </div>
                 
-                <!-- Meme card -->
-                <div class="my-16">
-
-                    <!-- Meme image -->
-                    <a href="#" class="w-full ">
-                        <img src="./img/main.png" alt="" class="w-full transform hover:scale-105 duration-200 card-shadow rounded-md">
-                    </a>
-
-                    <!-- Meme name - data -->
-                    <div class="flex justify-between items-baseline mt-5">
-                        <p class="text-gradient-pink text-xl font-extrabold">Bart-Simpon</p>
-                        <p class="text-gray-400 font-semibold text-sm">07 Oct 2021</p>
-                    </div>
-
-                    <!-- Owner -->
-                    <a href="#" class="text-gray-900 text-xs hover:underline">oliinykkk.museum.testnet</a>
-
-                    <!-- Donations - Category - Score -->
-                    <div class="flex justify-between mt-4">
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">donations</p>
-                            <p class="text-gradient-pink font-bold">1 near</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">category</p>
-                            <p class="text-gradient-pink font-bold">2</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">score</p>
-                            <p class="text-gradient-pink font-bold">4</p>
-                        </div>
-                    </div>
-
-                    <!-- Buttons -->
-                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 hover:border-blue-600 transform active:scale-95  from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md">Donate 1 NEAR</a>
-                    <div class="flex space-x-2">
-                        <a href="#" class="flex mt-2 py-2 rounded-md w-full items-center justify-center text-lg font-bold text-gradient-blue border-2 border-blue-600 ">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-                                <path d="M0.196747 5.6491C0.196498 4.19943 0.779132 2.81055 1.81356 1.79492C2.84799 0.779304 4.24733 0.222251 5.69675 0.249096C7.41407 0.239976 9.05273 0.968271 10.1967 2.2491C11.3408 0.968271 12.9794 0.239976 14.6967 0.249096C16.1462 0.222251 17.5455 0.779304 18.5799 1.79492C19.6144 2.81055 20.197 4.19943 20.1967 5.6491C20.1967 11.0051 13.8177 15.0491 10.1967 18.2491C6.58375 15.0221 0.196747 11.0091 0.196747 5.6491Z" fill="url(#paint0_linear)"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="-2.32098" y1="-4.33101" x2="25.8899" y2="-2.74503" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#56CCF2"/>
-                                <stop offset="1" stop-color="#2F80ED"/>
-                                </linearGradient>
-                                </defs>
-                            </svg>
-                            Vote
-                        </a>
-                        <a href="#" class="flex mt-2 py-2  rounded-md w-full items-center justify-center text-lg font-bold text-red-500 border-2 border-red-500">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                                <g clip-path="url(#clip0)">
-                                <path d="M12.4896 21.2942C11.8446 20.7222 11.1156 20.1272 10.3446 19.4942H10.3346C7.61959 17.2742 4.54259 14.7622 3.18359 11.7522C2.7371 10.7939 2.50049 9.75134 2.48957 8.69422C2.48659 7.2437 3.06836 5.8532 4.10339 4.83698C5.13843 3.82076 6.53937 3.26461 7.98959 3.29422C9.17021 3.29608 10.3254 3.6373 11.3176 4.27722C11.7536 4.56018 12.148 4.90247 12.4896 5.29422C12.8331 4.90401 13.2276 4.56192 13.6626 4.27722C14.6543 3.63717 15.8092 3.29593 16.9896 3.29422C18.4398 3.26461 19.8407 3.82076 20.8758 4.83698C21.9108 5.8532 22.4926 7.2437 22.4896 8.69422C22.4794 9.75303 22.2428 10.7974 21.7956 11.7572C20.4366 14.7672 17.3606 17.2782 14.6456 19.4942L14.6356 19.5022C13.8636 20.1312 13.1356 20.7262 12.4906 21.3022L12.4896 21.2942ZM7.98959 5.29422C7.0581 5.28256 6.15966 5.63906 5.48959 6.28622C4.84397 6.92038 4.48314 7.78926 4.4895 8.69422C4.50091 9.46472 4.67541 10.2241 5.00159 10.9222C5.6431 12.2209 6.50869 13.3963 7.55859 14.3942C8.54959 15.3942 9.68958 16.3622 10.6756 17.1762C10.9486 17.4012 11.2266 17.6282 11.5046 17.8552L11.6796 17.9982C11.9466 18.2162 12.2226 18.4422 12.4896 18.6642L12.5026 18.6522L12.5086 18.6472H12.5146L12.5236 18.6402H12.5286H12.5336L12.5516 18.6252L12.5926 18.5922L12.5996 18.5862L12.6106 18.5782H12.6166L12.6256 18.5702L13.2896 18.0252L13.4636 17.8822C13.7446 17.6532 14.0226 17.4262 14.2956 17.2012C15.2816 16.3872 16.4226 15.4202 17.4136 14.4152C18.4636 13.4178 19.3292 12.2427 19.9706 10.9442C20.3027 10.24 20.4796 9.47272 20.4896 8.69422C20.4937 7.79205 20.1331 6.92651 19.4896 6.29422C18.8208 5.64413 17.9222 5.2847 16.9896 5.29422C15.8515 5.28454 14.7635 5.76158 13.9996 6.60522L12.4896 8.34522L10.9796 6.60522C10.2156 5.76158 9.12766 5.28454 7.98959 5.29422Z" fill="#FE3030"/>
-                                <line x1="1.46788" y1="21.7722" x2="23.6918" y2="2.81648" stroke="#FE3030" stroke-width="1.96094"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0">
-                                <rect x="0.489594" y="0.294312" width="24" height="24" rx="6" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Vote
-                        </a>
-                    </div>
-                     <div class="mt-2 btn-border-pink w-full h-12 p-0.5">
-                        <a href="#" class="btn-bg-pink">
-                            <p class="btn-text-pink font-bold ">Comment / read comments</p>
-                        </a>
-                    </div>
-
-                </div>
                 
-                <!-- Meme card -->
-                <div class="my-16">
-
-                    <!-- Meme image -->
-                    <a href="#" class="w-full ">
-                        <img src="./img/main.png" alt="" class="w-full transform hover:scale-105 duration-200 card-shadow rounded-md">
-                    </a>
-
-                    <!-- Meme name - data -->
-                    <div class="flex justify-between items-baseline mt-5">
-                        <p class="text-gradient-pink text-xl font-extrabold">Bart-Simpon</p>
-                        <p class="text-gray-400 font-semibold text-sm">07 Oct 2021</p>
-                    </div>
-
-                    <!-- Owner -->
-                    <a href="#" class="text-gray-900 text-xs hover:underline">oliinykkk.museum.testnet</a>
-
-                    <!-- Donations - Category - Score -->
-                    <div class="flex justify-between mt-4">
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">donations</p>
-                            <p class="text-gradient-pink font-bold">1 near</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">category</p>
-                            <p class="text-gradient-pink font-bold">2</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">score</p>
-                            <p class="text-gradient-pink font-bold">4</p>
-                        </div>
-                    </div>
-
-                    <!-- Buttons -->
-                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 hover:border-blue-600 transform active:scale-95  from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md">Donate 1 NEAR</a>
-                    <div class="flex space-x-2">
-                        <a href="#" class="flex mt-2 py-2 rounded-md w-full items-center justify-center text-lg font-bold text-gradient-blue border-2 border-blue-600 ">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-                                <path d="M0.196747 5.6491C0.196498 4.19943 0.779132 2.81055 1.81356 1.79492C2.84799 0.779304 4.24733 0.222251 5.69675 0.249096C7.41407 0.239976 9.05273 0.968271 10.1967 2.2491C11.3408 0.968271 12.9794 0.239976 14.6967 0.249096C16.1462 0.222251 17.5455 0.779304 18.5799 1.79492C19.6144 2.81055 20.197 4.19943 20.1967 5.6491C20.1967 11.0051 13.8177 15.0491 10.1967 18.2491C6.58375 15.0221 0.196747 11.0091 0.196747 5.6491Z" fill="url(#paint0_linear)"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="-2.32098" y1="-4.33101" x2="25.8899" y2="-2.74503" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#56CCF2"/>
-                                <stop offset="1" stop-color="#2F80ED"/>
-                                </linearGradient>
-                                </defs>
-                            </svg>
-                            Vote
-                        </a>
-                        <a href="#" class="flex mt-2 py-2  rounded-md w-full items-center justify-center text-lg font-bold text-red-500 border-2 border-red-500">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                                <g clip-path="url(#clip0)">
-                                <path d="M12.4896 21.2942C11.8446 20.7222 11.1156 20.1272 10.3446 19.4942H10.3346C7.61959 17.2742 4.54259 14.7622 3.18359 11.7522C2.7371 10.7939 2.50049 9.75134 2.48957 8.69422C2.48659 7.2437 3.06836 5.8532 4.10339 4.83698C5.13843 3.82076 6.53937 3.26461 7.98959 3.29422C9.17021 3.29608 10.3254 3.6373 11.3176 4.27722C11.7536 4.56018 12.148 4.90247 12.4896 5.29422C12.8331 4.90401 13.2276 4.56192 13.6626 4.27722C14.6543 3.63717 15.8092 3.29593 16.9896 3.29422C18.4398 3.26461 19.8407 3.82076 20.8758 4.83698C21.9108 5.8532 22.4926 7.2437 22.4896 8.69422C22.4794 9.75303 22.2428 10.7974 21.7956 11.7572C20.4366 14.7672 17.3606 17.2782 14.6456 19.4942L14.6356 19.5022C13.8636 20.1312 13.1356 20.7262 12.4906 21.3022L12.4896 21.2942ZM7.98959 5.29422C7.0581 5.28256 6.15966 5.63906 5.48959 6.28622C4.84397 6.92038 4.48314 7.78926 4.4895 8.69422C4.50091 9.46472 4.67541 10.2241 5.00159 10.9222C5.6431 12.2209 6.50869 13.3963 7.55859 14.3942C8.54959 15.3942 9.68958 16.3622 10.6756 17.1762C10.9486 17.4012 11.2266 17.6282 11.5046 17.8552L11.6796 17.9982C11.9466 18.2162 12.2226 18.4422 12.4896 18.6642L12.5026 18.6522L12.5086 18.6472H12.5146L12.5236 18.6402H12.5286H12.5336L12.5516 18.6252L12.5926 18.5922L12.5996 18.5862L12.6106 18.5782H12.6166L12.6256 18.5702L13.2896 18.0252L13.4636 17.8822C13.7446 17.6532 14.0226 17.4262 14.2956 17.2012C15.2816 16.3872 16.4226 15.4202 17.4136 14.4152C18.4636 13.4178 19.3292 12.2427 19.9706 10.9442C20.3027 10.24 20.4796 9.47272 20.4896 8.69422C20.4937 7.79205 20.1331 6.92651 19.4896 6.29422C18.8208 5.64413 17.9222 5.2847 16.9896 5.29422C15.8515 5.28454 14.7635 5.76158 13.9996 6.60522L12.4896 8.34522L10.9796 6.60522C10.2156 5.76158 9.12766 5.28454 7.98959 5.29422Z" fill="#FE3030"/>
-                                <line x1="1.46788" y1="21.7722" x2="23.6918" y2="2.81648" stroke="#FE3030" stroke-width="1.96094"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0">
-                                <rect x="0.489594" y="0.294312" width="24" height="24" rx="6" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Vote
-                        </a>
-                    </div>
-                     <div class="mt-2 btn-border-pink w-full h-12 p-0.5">
-                        <a href="#" class="btn-bg-pink">
-                            <p class="btn-text-pink font-bold ">Comment / read comments</p>
-                        </a>
-                    </div>
-
-                </div>
-                
-                <!-- Meme card -->
-                <div class="my-16">
-
-                    <!-- Meme image -->
-                    <a href="#" class="w-full ">
-                        <img src="./img/main.png" alt="" class="w-full transform hover:scale-105 duration-200 card-shadow rounded-md">
-                    </a>
-
-                    <!-- Meme name - data -->
-                    <div class="flex justify-between items-baseline mt-5">
-                        <p class="text-gradient-pink text-xl font-extrabold">Bart-Simpon</p>
-                        <p class="text-gray-400 font-semibold text-sm">07 Oct 2021</p>
-                    </div>
-
-                    <!-- Owner -->
-                    <a href="#" class="text-gray-900 text-xs hover:underline">oliinykkk.museum.testnet</a>
-
-                    <!-- Donations - Category - Score -->
-                    <div class="flex justify-between mt-4">
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">donations</p>
-                            <p class="text-gradient-pink font-bold">1 near</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">category</p>
-                            <p class="text-gradient-pink font-bold">2</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">score</p>
-                            <p class="text-gradient-pink font-bold">4</p>
-                        </div>
-                    </div>
-
-                    <!-- Buttons -->
-                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 hover:border-blue-600 transform active:scale-95  from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md">Donate 1 NEAR</a>
-                    <div class="flex space-x-2">
-                        <a href="#" class="flex mt-2 py-2 rounded-md w-full items-center justify-center text-lg font-bold text-gradient-blue border-2 border-blue-600 ">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-                                <path d="M0.196747 5.6491C0.196498 4.19943 0.779132 2.81055 1.81356 1.79492C2.84799 0.779304 4.24733 0.222251 5.69675 0.249096C7.41407 0.239976 9.05273 0.968271 10.1967 2.2491C11.3408 0.968271 12.9794 0.239976 14.6967 0.249096C16.1462 0.222251 17.5455 0.779304 18.5799 1.79492C19.6144 2.81055 20.197 4.19943 20.1967 5.6491C20.1967 11.0051 13.8177 15.0491 10.1967 18.2491C6.58375 15.0221 0.196747 11.0091 0.196747 5.6491Z" fill="url(#paint0_linear)"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="-2.32098" y1="-4.33101" x2="25.8899" y2="-2.74503" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#56CCF2"/>
-                                <stop offset="1" stop-color="#2F80ED"/>
-                                </linearGradient>
-                                </defs>
-                            </svg>
-                            Vote
-                        </a>
-                        <a href="#" class="flex mt-2 py-2  rounded-md w-full items-center justify-center text-lg font-bold text-red-500 border-2 border-red-500">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                                <g clip-path="url(#clip0)">
-                                <path d="M12.4896 21.2942C11.8446 20.7222 11.1156 20.1272 10.3446 19.4942H10.3346C7.61959 17.2742 4.54259 14.7622 3.18359 11.7522C2.7371 10.7939 2.50049 9.75134 2.48957 8.69422C2.48659 7.2437 3.06836 5.8532 4.10339 4.83698C5.13843 3.82076 6.53937 3.26461 7.98959 3.29422C9.17021 3.29608 10.3254 3.6373 11.3176 4.27722C11.7536 4.56018 12.148 4.90247 12.4896 5.29422C12.8331 4.90401 13.2276 4.56192 13.6626 4.27722C14.6543 3.63717 15.8092 3.29593 16.9896 3.29422C18.4398 3.26461 19.8407 3.82076 20.8758 4.83698C21.9108 5.8532 22.4926 7.2437 22.4896 8.69422C22.4794 9.75303 22.2428 10.7974 21.7956 11.7572C20.4366 14.7672 17.3606 17.2782 14.6456 19.4942L14.6356 19.5022C13.8636 20.1312 13.1356 20.7262 12.4906 21.3022L12.4896 21.2942ZM7.98959 5.29422C7.0581 5.28256 6.15966 5.63906 5.48959 6.28622C4.84397 6.92038 4.48314 7.78926 4.4895 8.69422C4.50091 9.46472 4.67541 10.2241 5.00159 10.9222C5.6431 12.2209 6.50869 13.3963 7.55859 14.3942C8.54959 15.3942 9.68958 16.3622 10.6756 17.1762C10.9486 17.4012 11.2266 17.6282 11.5046 17.8552L11.6796 17.9982C11.9466 18.2162 12.2226 18.4422 12.4896 18.6642L12.5026 18.6522L12.5086 18.6472H12.5146L12.5236 18.6402H12.5286H12.5336L12.5516 18.6252L12.5926 18.5922L12.5996 18.5862L12.6106 18.5782H12.6166L12.6256 18.5702L13.2896 18.0252L13.4636 17.8822C13.7446 17.6532 14.0226 17.4262 14.2956 17.2012C15.2816 16.3872 16.4226 15.4202 17.4136 14.4152C18.4636 13.4178 19.3292 12.2427 19.9706 10.9442C20.3027 10.24 20.4796 9.47272 20.4896 8.69422C20.4937 7.79205 20.1331 6.92651 19.4896 6.29422C18.8208 5.64413 17.9222 5.2847 16.9896 5.29422C15.8515 5.28454 14.7635 5.76158 13.9996 6.60522L12.4896 8.34522L10.9796 6.60522C10.2156 5.76158 9.12766 5.28454 7.98959 5.29422Z" fill="#FE3030"/>
-                                <line x1="1.46788" y1="21.7722" x2="23.6918" y2="2.81648" stroke="#FE3030" stroke-width="1.96094"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0">
-                                <rect x="0.489594" y="0.294312" width="24" height="24" rx="6" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Vote
-                        </a>
-                    </div>
-                     <div class="mt-2 btn-border-pink w-full h-12 p-0.5">
-                        <a href="#" class="btn-bg-pink">
-                            <p class="btn-text-pink font-bold ">Comment / read comments</p>
-                        </a>
-                    </div>
-
-                </div>
-                
-                <!-- Meme card -->
-                <div class="my-16">
-
-                    <!-- Meme image -->
-                    <a href="#" class="w-full ">
-                        <img src="./img/main.png" alt="" class="w-full transform hover:scale-105 duration-200 card-shadow rounded-md">
-                    </a>
-
-                    <!-- Meme name - data -->
-                    <div class="flex justify-between items-baseline mt-5">
-                        <p class="text-gradient-pink text-xl font-extrabold">Bart-Simpon</p>
-                        <p class="text-gray-400 font-semibold text-sm">07 Oct 2021</p>
-                    </div>
-
-                    <!-- Owner -->
-                    <a href="#" class="text-gray-900 text-xs hover:underline">oliinykkk.museum.testnet</a>
-
-                    <!-- Donations - Category - Score -->
-                    <div class="flex justify-between mt-4">
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">donations</p>
-                            <p class="text-gradient-pink font-bold">1 near</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">category</p>
-                            <p class="text-gradient-pink font-bold">2</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">score</p>
-                            <p class="text-gradient-pink font-bold">4</p>
-                        </div>
-                    </div>
-
-                    <!-- Buttons -->
-                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 hover:border-blue-600 transform active:scale-95  from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md">Donate 1 NEAR</a>
-                    <div class="flex space-x-2">
-                        <a href="#" class="flex mt-2 py-2 rounded-md w-full items-center justify-center text-lg font-bold text-gradient-blue border-2 border-blue-600 ">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-                                <path d="M0.196747 5.6491C0.196498 4.19943 0.779132 2.81055 1.81356 1.79492C2.84799 0.779304 4.24733 0.222251 5.69675 0.249096C7.41407 0.239976 9.05273 0.968271 10.1967 2.2491C11.3408 0.968271 12.9794 0.239976 14.6967 0.249096C16.1462 0.222251 17.5455 0.779304 18.5799 1.79492C19.6144 2.81055 20.197 4.19943 20.1967 5.6491C20.1967 11.0051 13.8177 15.0491 10.1967 18.2491C6.58375 15.0221 0.196747 11.0091 0.196747 5.6491Z" fill="url(#paint0_linear)"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="-2.32098" y1="-4.33101" x2="25.8899" y2="-2.74503" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#56CCF2"/>
-                                <stop offset="1" stop-color="#2F80ED"/>
-                                </linearGradient>
-                                </defs>
-                            </svg>
-                            Vote
-                        </a>
-                        <a href="#" class="flex mt-2 py-2  rounded-md w-full items-center justify-center text-lg font-bold text-red-500 border-2 border-red-500">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                                <g clip-path="url(#clip0)">
-                                <path d="M12.4896 21.2942C11.8446 20.7222 11.1156 20.1272 10.3446 19.4942H10.3346C7.61959 17.2742 4.54259 14.7622 3.18359 11.7522C2.7371 10.7939 2.50049 9.75134 2.48957 8.69422C2.48659 7.2437 3.06836 5.8532 4.10339 4.83698C5.13843 3.82076 6.53937 3.26461 7.98959 3.29422C9.17021 3.29608 10.3254 3.6373 11.3176 4.27722C11.7536 4.56018 12.148 4.90247 12.4896 5.29422C12.8331 4.90401 13.2276 4.56192 13.6626 4.27722C14.6543 3.63717 15.8092 3.29593 16.9896 3.29422C18.4398 3.26461 19.8407 3.82076 20.8758 4.83698C21.9108 5.8532 22.4926 7.2437 22.4896 8.69422C22.4794 9.75303 22.2428 10.7974 21.7956 11.7572C20.4366 14.7672 17.3606 17.2782 14.6456 19.4942L14.6356 19.5022C13.8636 20.1312 13.1356 20.7262 12.4906 21.3022L12.4896 21.2942ZM7.98959 5.29422C7.0581 5.28256 6.15966 5.63906 5.48959 6.28622C4.84397 6.92038 4.48314 7.78926 4.4895 8.69422C4.50091 9.46472 4.67541 10.2241 5.00159 10.9222C5.6431 12.2209 6.50869 13.3963 7.55859 14.3942C8.54959 15.3942 9.68958 16.3622 10.6756 17.1762C10.9486 17.4012 11.2266 17.6282 11.5046 17.8552L11.6796 17.9982C11.9466 18.2162 12.2226 18.4422 12.4896 18.6642L12.5026 18.6522L12.5086 18.6472H12.5146L12.5236 18.6402H12.5286H12.5336L12.5516 18.6252L12.5926 18.5922L12.5996 18.5862L12.6106 18.5782H12.6166L12.6256 18.5702L13.2896 18.0252L13.4636 17.8822C13.7446 17.6532 14.0226 17.4262 14.2956 17.2012C15.2816 16.3872 16.4226 15.4202 17.4136 14.4152C18.4636 13.4178 19.3292 12.2427 19.9706 10.9442C20.3027 10.24 20.4796 9.47272 20.4896 8.69422C20.4937 7.79205 20.1331 6.92651 19.4896 6.29422C18.8208 5.64413 17.9222 5.2847 16.9896 5.29422C15.8515 5.28454 14.7635 5.76158 13.9996 6.60522L12.4896 8.34522L10.9796 6.60522C10.2156 5.76158 9.12766 5.28454 7.98959 5.29422Z" fill="#FE3030"/>
-                                <line x1="1.46788" y1="21.7722" x2="23.6918" y2="2.81648" stroke="#FE3030" stroke-width="1.96094"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0">
-                                <rect x="0.489594" y="0.294312" width="24" height="24" rx="6" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Vote
-                        </a>
-                    </div>
-                     <div class="mt-2 btn-border-pink w-full h-12 p-0.5">
-                        <a href="#" class="btn-bg-pink">
-                            <p class="btn-text-pink font-bold ">Comment / read comments</p>
-                        </a>
-                    </div>
-
-                </div>
-                
-                <!-- Meme card -->
-                <div class="my-16">
-
-                    <!-- Meme image -->
-                    <a href="#" class="w-full ">
-                        <img src="./img/main.png" alt="" class="w-full transform hover:scale-105 duration-200 card-shadow rounded-md">
-                    </a>
-
-                    <!-- Meme name - data -->
-                    <div class="flex justify-between items-baseline mt-5">
-                        <p class="text-gradient-pink text-xl font-extrabold">Bart-Simpon</p>
-                        <p class="text-gray-400 font-semibold text-sm">07 Oct 2021</p>
-                    </div>
-
-                    <!-- Owner -->
-                    <a href="#" class="text-gray-900 text-xs hover:underline">oliinykkk.museum.testnet</a>
-
-                    <!-- Donations - Category - Score -->
-                    <div class="flex justify-between mt-4">
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">donations</p>
-                            <p class="text-gradient-pink font-bold">1 near</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">category</p>
-                            <p class="text-gradient-pink font-bold">2</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-black text-sm font-bold">score</p>
-                            <p class="text-gradient-pink font-bold">4</p>
-                        </div>
-                    </div>
-
-                    <!-- Buttons -->
-                    <a href="#" class="inline-block mt-5 w-full py-3 bg-gradient-to-r border-2 hover:border-blue-600 transform active:scale-95  from-blue-500 to-blue-600 hover:text-blue-600 hover:from-white hover:to-white hover:shadow-xl text-white text-center font-semibold rounded-md">Donate 1 NEAR</a>
-                    <div class="flex space-x-2">
-                        <a href="#" class="flex mt-2 py-2 rounded-md w-full items-center justify-center text-lg font-bold text-gradient-blue border-2 border-blue-600 ">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
-                                <path d="M0.196747 5.6491C0.196498 4.19943 0.779132 2.81055 1.81356 1.79492C2.84799 0.779304 4.24733 0.222251 5.69675 0.249096C7.41407 0.239976 9.05273 0.968271 10.1967 2.2491C11.3408 0.968271 12.9794 0.239976 14.6967 0.249096C16.1462 0.222251 17.5455 0.779304 18.5799 1.79492C19.6144 2.81055 20.197 4.19943 20.1967 5.6491C20.1967 11.0051 13.8177 15.0491 10.1967 18.2491C6.58375 15.0221 0.196747 11.0091 0.196747 5.6491Z" fill="url(#paint0_linear)"/>
-                                <defs>
-                                <linearGradient id="paint0_linear" x1="-2.32098" y1="-4.33101" x2="25.8899" y2="-2.74503" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#56CCF2"/>
-                                <stop offset="1" stop-color="#2F80ED"/>
-                                </linearGradient>
-                                </defs>
-                            </svg>
-                            Vote
-                        </a>
-                        <a href="#" class="flex mt-2 py-2  rounded-md w-full items-center justify-center text-lg font-bold text-red-500 border-2 border-red-500">
-                            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                                <g clip-path="url(#clip0)">
-                                <path d="M12.4896 21.2942C11.8446 20.7222 11.1156 20.1272 10.3446 19.4942H10.3346C7.61959 17.2742 4.54259 14.7622 3.18359 11.7522C2.7371 10.7939 2.50049 9.75134 2.48957 8.69422C2.48659 7.2437 3.06836 5.8532 4.10339 4.83698C5.13843 3.82076 6.53937 3.26461 7.98959 3.29422C9.17021 3.29608 10.3254 3.6373 11.3176 4.27722C11.7536 4.56018 12.148 4.90247 12.4896 5.29422C12.8331 4.90401 13.2276 4.56192 13.6626 4.27722C14.6543 3.63717 15.8092 3.29593 16.9896 3.29422C18.4398 3.26461 19.8407 3.82076 20.8758 4.83698C21.9108 5.8532 22.4926 7.2437 22.4896 8.69422C22.4794 9.75303 22.2428 10.7974 21.7956 11.7572C20.4366 14.7672 17.3606 17.2782 14.6456 19.4942L14.6356 19.5022C13.8636 20.1312 13.1356 20.7262 12.4906 21.3022L12.4896 21.2942ZM7.98959 5.29422C7.0581 5.28256 6.15966 5.63906 5.48959 6.28622C4.84397 6.92038 4.48314 7.78926 4.4895 8.69422C4.50091 9.46472 4.67541 10.2241 5.00159 10.9222C5.6431 12.2209 6.50869 13.3963 7.55859 14.3942C8.54959 15.3942 9.68958 16.3622 10.6756 17.1762C10.9486 17.4012 11.2266 17.6282 11.5046 17.8552L11.6796 17.9982C11.9466 18.2162 12.2226 18.4422 12.4896 18.6642L12.5026 18.6522L12.5086 18.6472H12.5146L12.5236 18.6402H12.5286H12.5336L12.5516 18.6252L12.5926 18.5922L12.5996 18.5862L12.6106 18.5782H12.6166L12.6256 18.5702L13.2896 18.0252L13.4636 17.8822C13.7446 17.6532 14.0226 17.4262 14.2956 17.2012C15.2816 16.3872 16.4226 15.4202 17.4136 14.4152C18.4636 13.4178 19.3292 12.2427 19.9706 10.9442C20.3027 10.24 20.4796 9.47272 20.4896 8.69422C20.4937 7.79205 20.1331 6.92651 19.4896 6.29422C18.8208 5.64413 17.9222 5.2847 16.9896 5.29422C15.8515 5.28454 14.7635 5.76158 13.9996 6.60522L12.4896 8.34522L10.9796 6.60522C10.2156 5.76158 9.12766 5.28454 7.98959 5.29422Z" fill="#FE3030"/>
-                                <line x1="1.46788" y1="21.7722" x2="23.6918" y2="2.81648" stroke="#FE3030" stroke-width="1.96094"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0">
-                                <rect x="0.489594" y="0.294312" width="24" height="24" rx="6" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Vote
-                        </a>
-                    </div>
-                     <div class="mt-2 btn-border-pink w-full h-12 p-0.5">
-                        <a href="#" class="btn-bg-pink">
-                            <p class="btn-text-pink font-bold ">Comment / read comments</p>
-                        </a>
-                    </div>
-
-                </div>
                 
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gradient-pink text-white section-shadow">
+    <footer class="relative bg-gradient-pink text-white section-shadow">
+
+        <!-- Decorative img -->
+        <img src="./img/image 187.png" alt="" class="hidden md:block absolute -top-14 right-0">
+        <img src="./img/image 228.png" alt="" class="hidden md:block absolute bottom-0 left-0">
+
         <div class="container mx-auto px-6 py-10">
             <div class="grid grid-cols-1 lg:grid-cols-5">
 
@@ -912,10 +643,11 @@
 
                 <!-- Footer button -->
                 <div class="flex justify-center items-center">
-                    <a href="#" class="bg-white text-blue-500 mt-12 py-3 rounded-md lg:mt-0 text-2xl font-bold border-md w-full text-center">Jump to up</a>
+                    <a href="#" class="bg-white hover:bg-gray-200 text-blue-500 hover:text-blue-400 mt-12 py-3 rounded-md lg:mt-0 text-2xl font-bold border-md w-full text-center transform active:scale-95 duration-200">Jump to up</a>
                 </div>
             </div>
         </div>
     </footer>
+
 </body>
 </html>

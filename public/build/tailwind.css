@@ -599,9 +599,17 @@ video {
   width: 334px;
 }
 
+.w-alert {
+  width: 280px;
+}
+
 @media (min-width: 768px) {
   .w-meme {
     width: 550px;
+  }
+
+  .w-alert {
+    width: 490px;
   }
 }
 

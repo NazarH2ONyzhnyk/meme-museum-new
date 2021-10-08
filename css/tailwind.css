@@ -54,9 +54,15 @@
     .w-meme {
         width: 334px;
     }
+    .w-alert {
+        width: 280px;
+    }
     @screen md {
         .w-meme {
             width: 550px;
+        }
+        .w-alert {
+            width: 490px;
         }
     }
     @screen xl {

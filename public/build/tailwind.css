@@ -591,6 +591,26 @@ video {
   box-shadow: 4px 4px 35px 6px rgba(0, 0, 0, 0.2);
 }
 
+.bg-50 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.w-meme {
+  width: 334px;
+}
+
+@media (min-width: 768px) {
+  .w-meme {
+    width: 550px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .w-meme {
+    width: 712px;
+  }
+}
+
 .container{
   width: 100%;
 }

@@ -47,6 +47,21 @@
         -webkit-box-shadow: 4px 4px 35px 6px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 4px 4px 35px 6px rgba(0, 0, 0, 0.2);
         box-shadow: 4px 4px 35px 6px rgba(0, 0, 0, 0.2);
-
+    }
+    .bg-50 {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .w-meme {
+        width: 334px;
+    }
+    @screen md {
+        .w-meme {
+            width: 550px;
+        }
+    }
+    @screen xl {
+        .w-meme {
+            width: 712px;
+        }
     }
 }
